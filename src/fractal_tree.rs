@@ -22,7 +22,7 @@ fn setup(mut tree_data: ResMut<TreeData>) {
     for _ in 0..ITERATIONS {
         tree_data.current = apply_rules(&tree_data.current, &tree_data.rules);
     }
-    info!(tree_data.current);
+    // info!(tree_data.current);
 }
 
 fn update(gizmos: Gizmos, tree_data: ResMut<TreeData>) {
